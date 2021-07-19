@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "private": true,
+  "homepage": "",
+  "description": "",
+  "version": "0.0.0",
+  "license": "0BSD",
+  "author": "*",
+  "scripts": {
+    "test": "npm doctor"
+  }
+}
