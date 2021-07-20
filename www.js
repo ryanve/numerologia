@@ -6,6 +6,7 @@
   var raiz = form.raiz
   var vida = form.vida
   var suma = form.suma
+  var title = "numerología: "
   var params = new URLSearchParams(location.search)
   var saved = params.get(key)
 
@@ -19,6 +20,7 @@
   function calc() {
     var v = text.value
     v = v || v === 0 ? v : saved || 0
+    document.title = title + v
     var calc = {
       suma: api.suma(v),
       vida: api.vida(v),
