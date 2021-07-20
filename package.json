@@ -1,12 +1,29 @@
 {
-  "name": "",
-  "private": true,
-  "homepage": "",
-  "description": "",
+  "name": "numerologia",
+  "homepage": "https://ryanve.github.io/numerologia",
+  "description": "calculadora de numerología...numerology calculator",
   "version": "0.0.0",
   "license": "0BSD",
-  "author": "*",
+  "main": "api.js",
+  "author": "ryanve",
+  "funding": "https://github.com/sponsors/ryanve",
   "scripts": {
-    "test": "npm doctor"
-  }
+    "start": "open index.html || start index.html || xdg-open index.html",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanve/numerologia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanve/numerologia/issues"
+  },
+  "keywords": [
+    "numerologia",
+    "numerology",
+    "dark mode",
+    "divine",
+    "occult",
+    "night"
+  ]
 }

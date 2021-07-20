@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <title>=</title>
+  <rect fill="#111" width="100%" height="100%" />
+  <rect fill="lavender" width="50%" height="20%" x="25%" y="20%" />
+  <rect fill="lavender" width="50%" height="20%" x="25%" y="60%" />
+</svg>
