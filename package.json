@@ -2,7 +2,7 @@
   "name": "numerologia",
   "homepage": "https://ryanve.github.io/numerologia",
   "description": "calculadora de numerología...numerology calculator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "0BSD",
   "main": "api.js",
   "author": "ryanve",
