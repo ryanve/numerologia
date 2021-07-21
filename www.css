@@ -24,7 +24,7 @@
 :enabled {
   font-size: 1.5rem;
   border-style: solid;
-  border-color: currentColor;
+  border-color: lime;
   background: lime;
   color: #000;
 }
@@ -83,19 +83,24 @@ section a {
   margin-inline-end: 1ex;
 }
 
-input,
+input {
+  border-width: thick;
+  padding: .5ex;
+  max-width: 66%;
+  min-width: 22%;
+}
+
 button {
   border-width: thick;
   padding: .5ex;
-  max-width: 80%;
-  min-width: 4ex;
+  max-width: 100%;
+  min-width: 5ex;
 }
 
 small,
 address {
  font-weight: 300;
 }
-
 
 h3 { line-height: normal; font-size: 1.333rem }
 h2 { line-height: normal; font-size: 1.666rem }
@@ -147,4 +152,12 @@ aside {
 [role=status] {
   font-size: 1.5rem;
   margin-block-end: 1rem;
+}
+
+@media (max-width: 27em) {
+  input,
+  button {
+    min-width: 100%;
+    margin-block-end: 1ex;
+  }
 }
