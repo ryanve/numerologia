@@ -21,11 +21,20 @@
   filter: hue-rotate(300deg);
 }
 
-:enabled {
+:enabled,
+:disabled {
   font-size: 1.5rem;
   border-style: solid;
+  border-radius: 0;
   border-color: lime;
   background: lime;
+  color: #000;
+}
+
+:disabled {
+  border-style: dashed;
+  border-color: #999;
+  background: #999;
   color: #000;
 }
 
