@@ -86,14 +86,14 @@ section a {
 input {
   border-width: thick;
   padding: .5ex;
-  max-width: 66%;
-  min-width: 22%;
+  max-width: 80%;
+  min-width: 40%;
 }
 
 button {
   border-width: thick;
   padding: .5ex;
-  max-width: 100%;
+  max-width: 20%;
   min-width: 5ex;
 }
 
@@ -154,10 +154,14 @@ aside {
   margin-block-end: 1rem;
 }
 
-@media (max-width: 27em) {
-  input,
+@media (max-width: 60em) {
+  input {
+    max-width: 66%;
+    min-width: 66%;
+  }
+
   button {
-    min-width: 100%;
-    margin-block-end: 1ex;
+    max-width: 22%;
+    min-width: 22%;
   }
 }
