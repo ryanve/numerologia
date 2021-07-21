@@ -152,7 +152,7 @@ footer {
 }
 
 aside {
-  max-width: 43vw;
+  max-width: 33em;
 }
 
 [hidden] + kbd,
