@@ -11,7 +11,8 @@
   var norm = "".normalize
 
   function grapheme(txt) {
-    return norm.call(txt, "NFD").replace(glyph, "")
+    return digit.test(txt) ? "" + txt :
+      norm.call(txt, "NFD").replace(glyph, "")
   }
 
   function modulo(n) {
