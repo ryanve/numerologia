@@ -4,7 +4,7 @@
   var key = "_"
   var text = form[key]
   var raiz = form.raiz
-  var vida = form.vida
+  var numero = form.numero
   var suma = form.suma
   var title = "numerología: "
   var params = new URLSearchParams(location.search)
@@ -23,15 +23,15 @@
     document.title = title + v
     var calc = {
       suma: api.suma(v),
-      vida: api.vida(v),
+      numero: api.numero(v),
       raiz: api.raiz(v)
     }
     suma.hidden = calc.suma === calc.raiz
-    vida.hidden =
-      calc.vida === calc.raiz ||
-      calc.vida === calc.suma
+    numero.hidden =
+      calc.numero === calc.raiz ||
+      calc.numero === calc.suma
     update(suma, calc.suma)
-    update(vida, calc.vida)
+    update(numero, calc.numero)
     update(raiz, calc.raiz)
   }
 
