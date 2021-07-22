@@ -19,8 +19,11 @@
     return "" + txt
   }
 
+  function key(n) {
+    return modulo(digit.test(n) ? n : place(n))
+  }
+
   function modulo(n) {
-    n = digit.test(n) ? n : place(n)
     return +n ? n % 9 || 9 : 0
   }
 
@@ -41,7 +44,7 @@
     var next
     while (i--) {
       next = txt[i]
-      next =  modulo(next)
+      next =  key(next)
       suma += next > 0 ? +next : 0
     }
     return round(suma)
@@ -52,9 +55,9 @@
     return n < 10 ? n : raiz(n)
   }
 
-  function vida(txt) {
+  function numero(txt) {
     var n = suma(txt)
-    return n < 10 || rep(n) ? n : vida(n)
+    return n < 10 || rep(n) ? n : numero(n)
   }
 
   function rep(dig) {
@@ -68,14 +71,16 @@
   api.base = base
   api.bass = bass
   api.basic = basic
-  api.life = vida
+  api.key = key
   api.modulo = modulo
+  api.num = numero
+  api.numero = numero
+  api.place = place
   api.raiz = raiz
   api.rep = rep
   api.root = raiz
   api.sum = suma
   api.suma = suma
-  api.vida = vida
 
   typeof module != "undefined" && module.exports
     ? module.exports = api
