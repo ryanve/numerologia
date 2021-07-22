@@ -42,8 +42,22 @@ assert.ok(api.raiz("FF") === 3)
 assert.ok(api.raiz("firefox") === 2)
 console.log("ok raiz")
 
+
+assert.ok(api.base("música"), "musica")
 assert.ok(api.base("Áá"), "Aa")
+assert.ok(api.base("¡!"), "¡!")
+assert.ok(api.base(11), "11")
+assert.ok(api.base(0), "0")
 console.log("ok base")
+
+if (api.base === api.bass) {
+  console.log("ok bass")
+}
+
+assert.ok(api.basic("saxofón"), "saxofón")
+assert.ok(api.basic(11), "11")
+assert.ok(api.basic(0), "0")
+console.log("ok basic")
 
 assert.ok(api.raiz === api.root)
 assert.ok(api.vida === api.life)
