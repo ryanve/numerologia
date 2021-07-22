@@ -54,11 +54,8 @@ numerologia.base("amoré") // "amore"
 ### key
 
 ```js
-// letter
-// letra
 numerologia.key("d") // 4
 numerologia.key("j") // 1
-// modulo
 numerologia.key(29) // 2
 numerologia.key(10) // 1
 ```
