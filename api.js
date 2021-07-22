@@ -9,10 +9,14 @@
   var repeating = /^(.)\1+$/
   var glyph = /[\u0300-\u036f]/g
   var norm = "".normalize
+  var base = norm ? bass : basic
 
-  function grapheme(txt) {
-    return digit.test(txt) ? "" + txt :
-      norm.call(txt, "NFD").replace(glyph, "")
+  function bass(txt) {
+    return norm.call(txt, "NFD").replace(glyph, "")
+  }
+
+  function basic(txt) {
+    return "" + txt
   }
 
   function modulo(n) {
@@ -21,7 +25,7 @@
   }
 
   function place(letter) {
-    letter = grapheme(lower.call(letter))
+    letter = base(lower.call(letter))
     return bet.indexOf(letter) + 1
   }
 
@@ -61,7 +65,9 @@
     return api[method](txt)
   }
 
-  api.grapheme = grapheme
+  api.base = base
+  api.bass = bass
+  api.basic = basic
   api.life = vida
   api.modulo = modulo
   api.raiz = raiz

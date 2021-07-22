@@ -42,8 +42,8 @@ assert.ok(api.raiz("FF") === 3)
 assert.ok(api.raiz("firefox") === 2)
 console.log("ok raiz")
 
-assert.ok(api.grapheme("Áá"), "Aa")
-console.log("ok grapheme")
+assert.ok(api.base("Áá"), "Aa")
+console.log("ok base")
 
 assert.ok(api.raiz === api.root)
 assert.ok(api.vida === api.life)
