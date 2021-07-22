@@ -42,18 +42,16 @@ assert.ok(api.raiz("FF") === 3)
 assert.ok(api.raiz("firefox") === 2)
 console.log("ok raiz")
 
-
-assert.ok(api.base("música"), "musica")
-assert.ok(api.base("Áá"), "Aa")
-assert.ok(api.base("¡!"), "¡!")
-assert.ok(api.base(11), "11")
-assert.ok(api.base(0), "0")
-console.log("ok base")
-
 if (api.base === api.bass) {
+  assert.ok(api.bass("música"), "musica")
+  assert.ok(api.bass("Áá"), "Aa")
+  assert.ok(api.bass("¡!"), "¡!")
+  assert.ok(api.bass(11), "11")
+  assert.ok(api.bass(0), "0")
   console.log("ok bass")
-}
+} else assert.ok(api.base === api.basic)
 
+console.log("ok base")
 assert.ok(api.basic("saxofón"), "saxofón")
 assert.ok(api.basic(11), "11")
 assert.ok(api.basic(0), "0")
