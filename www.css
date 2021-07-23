@@ -88,11 +88,6 @@ address {
   margin: 0;
 }
 
-aside ul,
-aside li {
-  display: contents;
-}
-
 aside a {
   margin-inline-end: 1ex;
 }
