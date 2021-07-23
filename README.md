@@ -94,6 +94,16 @@ numerologia.key(29) // 2
 numerologia.key(10) // 1
 ```
 
+### [create <br> crear](../../pull/29)
+
+- create alternate nine [api](#api) from alphabet
+- default alphabet is latin
+
+```js
+var robot = numerologia.create("!@#$%^&*()")
+robot.raiz("!!") // 2
+```
+
 ### [npm](https://npm.im/numerologia)
 
 ```bash
