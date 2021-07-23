@@ -10,8 +10,8 @@
   var norm = "".normalize
 
   function create(bet) {
-    var base = norm ? bass : basic
     bet = bet ? lower.call(bet) : latin
+    var base = norm ? bass : basic
 
     function bass(txt) {
       return norm.call(txt, "NFD").replace(glyph, "")
