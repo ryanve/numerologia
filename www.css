@@ -78,20 +78,6 @@ output {
   filter: hue-rotate(300deg);
 }
 
-i {
-  font-style: inherit;
-  font-weight: bolder;
-}
-
-address {
-  font: inherit;
-  margin: 0;
-}
-
-aside a {
-  margin-inline-end: 1ex;
-}
-
 input {
   border-width: thick;
   padding: .5ex;
@@ -104,6 +90,16 @@ button {
   padding: .5ex;
   max-width: 20%;
   min-width: 5ex;
+}
+
+i {
+  font-style: inherit;
+  font-weight: bolder;
+}
+
+address {
+  font: inherit;
+  margin: 0;
 }
 
 small,
@@ -136,6 +132,14 @@ form p:first-of-type {
   margin-block-start: 1em;
 }
 
+aside {
+  max-width: 33em;
+}
+
+aside a {
+  margin-inline-end: 1ex;
+}
+
 main,
 label,
 section {
@@ -149,10 +153,6 @@ footer {
   display: block;
   margin: 0;
   margin-block-end: 2em;
-}
-
-aside {
-  max-width: 33em;
 }
 
 [hidden] + kbd,
