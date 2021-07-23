@@ -14,6 +14,40 @@ numerologia.numero("water") // 22
 numerologia.numero("2020-12-12") // 1
 ```
 
+### numerología del nombre <br> name numerology <br> baby naming
+
+```js
+numerologia.numero("dounia") // 1
+numerologia.numero("summer") // 8
+numerologia.numero("mf doom") // 3
+```
+
+### numerología de palabras <br> word numerology
+
+```js
+numerologia.numero("fire") // 11
+numerologia.numero("soul") // 4
+```
+
+### brand numerology <br> brand naming
+
+```js
+numerologia.numero("github") // 4
+numerologia.numero("github.com") // 44
+```
+
+### ruta de vida <br> life path number
+
+```js
+let birth = "1997-03-31"
+numerologia.numero(birth) // 33
+```
+
+```js
+let birth = "07/13/1971"
+numerologia.numero(birth) // 11
+```
+
 ### suma digital <br> digital sum
 
 ```js
