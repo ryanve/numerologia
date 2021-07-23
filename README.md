@@ -39,8 +39,8 @@ numerologia.numero("github.com") // 44
 ### ruta de vida <br> life path number
 
 ```js
-let birth = "1997-03-31"
-numerologia.numero(birth) // 33
+let nacimiento = "1997-03-31"
+numerologia.numero(nacimiento) // 33
 ```
 
 ```js
