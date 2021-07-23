@@ -1,5 +1,5 @@
-!function(scope) {
-  var api = scope.numerologia
+!function(esta) {
+  var api = esta.numerologia
   var form = document.getElementById("formulario")
   var key = "_"
   var text = form[key]

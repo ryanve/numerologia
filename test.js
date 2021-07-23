@@ -63,6 +63,7 @@ assert.ok(api.suma === api.sum)
 console.log("ok alias")
 
 assert.ok(api("raiz", 11) === api.raiz("11"))
+assert.ok(api.create("!@#").raiz("!!") === 2)
 console.log("ok api")
 
 console.log("=)\n")
