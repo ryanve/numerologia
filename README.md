@@ -93,3 +93,9 @@ numerologia.key("j") // 1
 numerologia.key(29) // 2
 numerologia.key(10) // 1
 ```
+
+### [npm](https://npm.im/numerologia)
+
+```bash
+npm install numerologia
+```
