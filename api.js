@@ -1,20 +1,15 @@
 !function(esta) {
-  var api = create()
-  var nombre = "numerologia"
-  typeof module != "undefined" && module.exports
-    ? module.exports = api
-    : esta[nombre] = api
+  var latin = "abcdefghijklmnopqrstuvwxyz"
+  var join = "".join
+  var split = "".split
+  var lower = "".toLowerCase
+  var digit = /^\d+$/
+  var round = Math.round
+  var repeating = /^(.)\1+$/
+  var glyph = /[\u0300-\u036f]/g
+  var norm = "".normalize
 
   function create(bet) {
-    var latin = "abcdefghijklmnopqrstuvwxyz"
-    var join = "".join
-    var split = "".split
-    var lower = "".toLowerCase
-    var digit = /^\d+$/
-    var round = Math.round
-    var repeating = /^(.)\1+$/
-    var glyph = /[\u0300-\u036f]/g
-    var norm = "".normalize
     var base = norm ? bass : basic
     bet = bet ? lower.call(bet) : latin
 
@@ -93,7 +88,12 @@
     api.root = raiz
     api.sum = suma
     api.suma = suma
-
     return api
   }
+
+  var api = create()
+  var nombre = "numerologia"
+  typeof module != "undefined" && module.exports
+    ? module.exports = api
+    : esta[nombre] = api
 }(this)
