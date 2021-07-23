@@ -100,7 +100,7 @@ numerologia.key(10) // 1
 - default alphabet is latin
 
 ```js
-var robot = numerologia.create("!@#$%^&*()")
+let robot = numerologia.create("!@#$%^&*()")
 robot.raiz("!!") // 2
 ```
 
