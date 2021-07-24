@@ -66,10 +66,6 @@
       return repeating.test(dig)
     }
 
-    function rep(dig) {
-      return repeating.test(dig)
-    }
-
     function api(method, txt) {
       return api[method](txt)
     }
