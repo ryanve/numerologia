@@ -48,6 +48,17 @@ let birth = "07/13/1971"
 numerologia.numero(birth) // 11
 ```
 
+### composición digital <br> digital composition
+
+```js
+numerologia.show("  ") // "00"
+numerologia.show("DJ") // "41"
+numerologia.show("a11y") // "1117"
+numerologia.show("grace") // "79135"
+numerologia.show("blink-182") // "239520182"
+numerologia.show("space cadet") // "17135031452"
+```
+
 ### suma digital <br> digital sum
 
 ```js

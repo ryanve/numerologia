@@ -62,6 +62,17 @@
       return n < 10 || rep(n) ? n : numero(n)
     }
 
+    function show(txt) {
+      txt = stack(txt)
+      var over = txt.length
+      var next = 0
+      var show = ""
+      while (next < over) {
+        show += key(txt[next++])
+      }
+      return show
+    }
+
     function rep(dig) {
       return repeating.test(dig)
     }
@@ -82,6 +93,7 @@
     api.raiz = raiz
     api.rep = rep
     api.root = raiz
+    api.show = show
     api.sum = suma
     api.suma = suma
     return api
