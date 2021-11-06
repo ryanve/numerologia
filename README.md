@@ -48,7 +48,7 @@ let birth = "07/13/1971"
 numerologia.numero(birth) // 11
 ```
 
-### show digits
+### digital composition <br> composición digital
 
 ```js
 numerologia.show("  ") // "00"
