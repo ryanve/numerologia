@@ -28,6 +28,7 @@ assert.ok(api.show("..") === "00")
 assert.ok(api.show("DJ") === "41")
 assert.ok(api.show("a11y") === "1117")
 assert.ok(api.show("grace") === "79135")
+assert.ok(api.show("blink-182") === "239520182")
 assert.ok(api.show("space cadet") === "17135031452")
 console.log("ok show")
 
