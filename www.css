@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  transition: 90ms filter;
 }
 
 :root {
@@ -172,5 +171,11 @@ footer {
   button {
     max-width: 22%;
     min-width: 22%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition: 90ms filter;
   }
 }
