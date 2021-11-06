@@ -64,13 +64,11 @@
 
     function show(txt) {
       txt = stack(txt)
-      var i = txt.length
+      var over = txt.length
+      var next = 0
       var show = ""
-      var next
-      while (i--) {
-        next = txt[i]
-        next = key(next)
-        show = next + show
+      while (next < over) {
+        show += key(txt[next++])
       }
       return show
     }
