@@ -176,6 +176,6 @@ footer {
 
 @media (prefers-reduced-motion: no-preference) {
   * {
-    transition: 90ms filter;
+    transition: 333ms filter;
   }
 }
